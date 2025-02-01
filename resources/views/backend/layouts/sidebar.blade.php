@@ -52,7 +52,7 @@
 
                 <!-- Environmental -->
                 <li class="menu nav-item">
-                    <a href="{{ url('/') }}" class="nav-link group">
+                    <a href="{{ url('/environmental') }}" class="nav-link group">
                         {{-- <span class="menu-icon"><i class="uil uil-estate"></i></span> --}}
                         <div class="flex items-center">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -75,7 +75,7 @@
 
                 <!-- Social -->
                 <li class="menu nav-item">
-                    <a href="{{ url('/') }}" class="nav-link group">
+                    <a href="{{ url('/social') }}" class="nav-link group">
                         {{-- <span class="menu-icon"><i class="uil uil-estate"></i></span> --}}
                         <div class="flex items-center">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none"

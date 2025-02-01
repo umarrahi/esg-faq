@@ -1,14 +1,14 @@
 @extends('backend.layouts.app')
 
 @section('title')
-    General - ESG Form
+    Environmental - ESG FAQs
 @endsection
 
 @section('content')
     <div class="space-y-8 pt-5" x-data="form">
         <div class="panel">
             <div class="mb-5">
-                <h5 class="text-lg font-semibold dark:text-white-light">General</h5>
+                <h5 class="text-lg font-semibold dark:text-white-light">Environmental</h5>
             </div>
             <div class="mb-5" x-data="{ tab: 'home' }">
                 <div>
