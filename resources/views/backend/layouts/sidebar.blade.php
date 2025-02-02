@@ -6,7 +6,7 @@
                 <a href="index.html" class="main-logo flex shrink-0 items-center">
                     <img class="ml-[5px] w-8 flex-none" src="assets/images/logo.svg" alt="image" />
                     <span
-                        class="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">VRISTO</span>
+                        class="align-middle text-2xl font-semibold ltr:ml-1.5 rtl:mr-1.5 dark:text-white-light lg:inline">COEESG</span>
                 </a>
                 <a href="javascript:;"
                     class="collapse-icon flex h-8 w-8 items-center rounded-full transition duration-300 hover:bg-gray-500/10 rtl:rotate-180 dark:text-white-light dark:hover:bg-dark-light/10"
