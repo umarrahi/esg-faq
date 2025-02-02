@@ -35,21 +35,64 @@
                 <div class="flex-1 pt-5 text-sm">
                     <template x-if="tab === 'home'">
                         <div class="active">
-                            <h4 class="mb-4 text-2xl font-semibold">We move your world!</h4>
-                            <p class="mb-4">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip
-                                ex ea commodo consequat.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                                ut labore et
-                                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip
-                                ex ea commodo consequat.
-                            </p>
+                            <h4 class="mb-4 text-xl font-semibold">We move your world!</h4>
+                                <!-- icon only -->
+                            <div class="mb-5" x-data="{ activeTab: 1 }">
+                                <div class="inline-block w-full">
+                                    <div class="relative z-[1]">
+                                        <div class="bg-primary w-[15%] h-1 absolute ltr:left-0 rtl:right-0 top-[30px] m-auto -z-[1] transition-[width]"
+                                            :class="{ 'w-[15%]': activeTab === 1, 'w-[48%]': activeTab ===
+                                                2, 'w-[81%]': activeTab === 3 }">
+                                        </div>
+                                        <ul class="mb-5 grid grid-cols-3">
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 1 }"
+                                                    @click="activeTab = 1">
+                                                    <span class="text-lg font-semibold">1</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 2 }"
+                                                    @click="activeTab = 2">
+                                                    <span class="text-lg font-semibold">2</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 3 }"
+                                                    @click="activeTab = 3">
+                                                    <span class="text-lg font-semibold">3</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <template x-if="activeTab === 1">
+                                            <p class="mb-5">Try the keyboard navigation by clicking arrow left or right!
+                                            </p>
+                                        </template>
+                                        <template x-if="activeTab === 2">
+                                            <p class="mb-5">The next and previous buttons help you to navigate through
+                                                your content.</p>
+                                        </template>
+                                        <template x-if="activeTab === 3">
+                                            <p class="mb-5">Wonderful transition effects.</p>
+                                        </template>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <button type="button" class="btn btn-primary" :disabled="activeTab === 1"
+                                            @click="activeTab--">Back</button>
+                                        <button type="button" class="btn btn-primary" :disabled="activeTab === 3"
+                                            @click="activeTab++">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </template>
                     <template x-if="tab === 'profile'">
