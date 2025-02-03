@@ -67,38 +67,78 @@
                             <div class="mb-5" x-data="{ activeTab: 1 }">
                                 <div class="inline-block w-full">
                                     {{-- Stepper No (Start) --}}
-                                    <div class="relative z-[1] my-10">
-                                        <div class="bg-primary w-[15%] h-1 absolute ltr:left-0 rtl:right-0 top-[30px] m-auto -z-[1] transition-[width]"
-                                            :class="{
-                                                'w-[15%]': activeTab === 1,
-                                                'w-[48%]': activeTab ===
-                                                    2,
-                                                'w-[81%]': activeTab === 3
-                                            }">
-                                        </div>
-                                        <ul class="mb-5 grid grid-cols-3">
+                                    <div class="my-10">
+                                        <ul class="flex flex-wrap justify-between item-center gap-4">
                                             <li class="mx-auto">
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 1 }"
                                                     @click="activeTab = 1">
-                                                    <span class="text-lg font-semibold">1</span>
+                                                    <span class="text-md font-semibold">1</span>
                                                 </a>
                                             </li>
                                             <li class="mx-auto">
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 2 }"
                                                     @click="activeTab = 2">
-                                                    <span class="text-lg font-semibold">2</span>
+                                                    <span class="text-md font-semibold">2</span>
                                                 </a>
                                             </li>
                                             <li class="mx-auto">
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 3 }"
                                                     @click="activeTab = 3">
-                                                    <span class="text-lg font-semibold">3</span>
+                                                    <span class="text-md font-semibold">3</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 4 }"
+                                                    @click="activeTab = 4">
+                                                    <span class="text-md font-semibold">4</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 5 }"
+                                                    @click="activeTab = 5">
+                                                    <span class="text-md font-semibold">5</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 6 }"
+                                                    @click="activeTab = 6">
+                                                    <span class="text-md font-semibold">6</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 7 }"
+                                                    @click="activeTab = 7">
+                                                    <span class="text-md font-semibold">7</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 8 }"
+                                                    @click="activeTab = 8">
+                                                    <span class="text-md font-semibold">8</span>
+                                                </a>
+                                            </li>
+                                            <li class="mx-auto">
+                                                <a href="javascript:;"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
+                                                    :class="{ '!border-primary !bg-primary text-white': activeTab === 9 }"
+                                                    @click="activeTab = 9">
+                                                    <span class="text-md font-semibold">9</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -109,7 +149,10 @@
                                     <div>
                                         <template x-if="activeTab === 1">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Has your company conducted a comprehensive carbon footprint assessment to measure greenhouse gas emissions?
+                                                <p class="mb-4 text-lg">
+                                                    Does the company measure its total energy consumption? If yes, please
+                                                    indicate the total energy consumption of the company over the assessment
+                                                    period (MWh)?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">
@@ -127,7 +170,8 @@
                                         </template>
                                         <template x-if="activeTab === 2">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Are there clear targets and strategies in place to reduce your company’s greenhouse gas emissions?
+                                                <p class="mb-4 text-lg">Are there clear targets and strategies in place to
+                                                    reduce your company’s greenhouse gas emissions?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">
@@ -145,7 +189,8 @@
                                         </template>
                                         <template x-if="activeTab === 3">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Does your company significantly incorporate renewable energy sources in its operations?
+                                                <p class="mb-4 text-lg">Does your company significantly incorporate
+                                                    renewable energy sources in its operations?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">
@@ -168,7 +213,7 @@
                                     <div class="flex justify-between">
                                         <button type="button" class="btn btn-primary" :disabled="activeTab === 1"
                                             @click="activeTab--">Back</button>
-                                        <button type="button" class="btn btn-primary" :disabled="activeTab === 3"
+                                        <button type="button" class="btn btn-primary" :disabled="activeTab === 9"
                                             @click="activeTab++">Next</button>
                                     </div>
                                     {{-- Stepper Button (End) --}}
@@ -228,7 +273,8 @@
                                     <div>
                                         <template x-if="activeTab === 1">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Do you have monitoring systems to track and report on air and water emissions?
+                                                <p class="mb-4 text-lg">Do you have monitoring systems to track and report
+                                                    on air and water emissions?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">
@@ -246,7 +292,8 @@
                                         </template>
                                         <template x-if="activeTab === 2">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Are there robust policies to manage and safely dispose of hazardous waste generated in your operations?
+                                                <p class="mb-4 text-lg">Are there robust policies to manage and safely
+                                                    dispose of hazardous waste generated in your operations?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">
@@ -264,7 +311,8 @@
                                         </template>
                                         <template x-if="activeTab === 3">
                                             <div class="mb-5">
-                                                <p class="mb-4 text-lg">Is your company committed to reducing plastic waste and other pollutants in its supply chain?
+                                                <p class="mb-4 text-lg">Is your company committed to reducing plastic waste
+                                                    and other pollutants in its supply chain?
                                                 </p>
                                                 <div>
                                                     <label class="flex items-center cursor-pointer">

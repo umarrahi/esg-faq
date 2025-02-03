@@ -43,37 +43,30 @@
                             <div class="mb-5" x-data="{ activeTab: 1 }">
                                 <div class="inline-block w-full">
                                     {{-- Stepper No (Start) --}}
-                                    <div class="relative z-[1] my-10">
-                                        <div class="bg-primary w-[15%] h-1 absolute ltr:left-0 rtl:right-0 top-[30px] m-auto -z-[1] transition-[width]"
-                                            :class="{
-                                                'w-[15%]': activeTab === 1,
-                                                'w-[48%]': activeTab === 2,
-                                                'w-[81%]': activeTab === 3
-                                            }">
-                                        </div>
-                                        <ul class="mb-5 grid grid-cols-3">
-                                            <li class="mx-auto">
+                                    <div class="my-10">
+                                        <ul class="flex flex-wrap justify-between item-center gap-4">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 1 }"
                                                     @click="activeTab = 1">
-                                                    <span class="text-lg font-semibold">1</span>
+                                                    <span class="text-md font-semibold">1</span>
                                                 </a>
                                             </li>
-                                            <li class="mx-auto">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 2 }"
                                                     @click="activeTab = 2">
-                                                    <span class="text-lg font-semibold">2</span>
+                                                    <span class="text-md font-semibold">2</span>
                                                 </a>
                                             </li>
-                                            <li class="mx-auto">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 3 }"
                                                     @click="activeTab = 3">
-                                                    <span class="text-lg font-semibold">3</span>
+                                                    <span class="text-md font-semibold">3</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -81,7 +74,7 @@
                                     {{-- Stepper No (End) --}}
 
                                     {{-- Stepper Content (Start) --}}
-                                    <div>
+                                    <div class="mb-10">
                                         <template x-if="activeTab === 1">
                                             <div class="mb-5">
                                                 <p class="mb-4 text-lg">What was the company's net turnover for the
@@ -155,43 +148,38 @@
                             <div class="mb-5" x-data="{ activeTab: 1 }">
                                 <div class="inline-block w-full">
                                     {{-- Stepper No (Start) --}}
-                                    <div class="relative z-[1] my-10">
-                                        <div class="bg-primary w-[15%] h-1 absolute ltr:left-0 rtl:right-0 top-[30px] m-auto -z-[1] transition-[width]"
-                                            :style="{
-                                                width: activeTab === 1 ? '15%' : activeTab === 2 ? '40%' : activeTab === 3 ? '70%' : '100%'
-                                            }">
-                                        </div>
-                                        <ul class="mb-5 grid grid-cols-4">
-                                            <li class="mx-auto">
+                                    <div class="my-10">
+                                        <ul class="flex flex-wrap justify-between item-center gap-4 bg-purple-50">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 1 }"
                                                     @click="activeTab = 1">
-                                                    <span class="text-lg font-semibold">1</span>
+                                                    <span class="text-md font-semibold">1</span>
                                                 </a>
                                             </li>
-                                            <li class="mx-auto">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 2 }"
                                                     @click="activeTab = 2">
-                                                    <span class="text-lg font-semibold">2</span>
+                                                    <span class="text-md font-semibold">2</span>
                                                 </a>
                                             </li>
-                                            <li class="mx-auto">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 3 }"
                                                     @click="activeTab = 3">
-                                                    <span class="text-lg font-semibold">3</span>
+                                                    <span class="text-md font-semibold">3</span>
                                                 </a>
                                             </li>
-                                            <li class="mx-auto">
+                                            <li>
                                                 <a href="javascript:;"
-                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-14 h-14 rounded-full"
+                                                    class="bg-white dark:bg-[#253b5c] border-[3px] border-[#f3f2ee] dark:border-[#1b2e4b] flex justify-center items-center w-10 h-10 rounded-full"
                                                     :class="{ '!border-primary !bg-primary text-white': activeTab === 4 }"
                                                     @click="activeTab = 4">
-                                                    <span class="text-lg font-semibold">4</span>
+                                                    <span class="text-md font-semibold">4</span>
                                                 </a>
                                             </li>
                                         </ul>
@@ -199,7 +187,7 @@
                                     {{-- Stepper No (End) --}}
 
                                     {{-- Stepper Content (Start) --}}
-                                    <div>
+                                    <div class="mb-10">
                                         <template x-if="activeTab === 1">
                                             <div class="mb-5">
                                                 <p class="mb-4 text-lg">Does the company have a sustainability strategy in
