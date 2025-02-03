@@ -12,6 +12,9 @@
         <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('assets/css/perfect-scrollbar.min.css')}}" />
         <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('assets/css/style.css')}}" />
         <link defer rel="stylesheet" type="text/css" media="screen" href="{{ asset('assets/css/animate.css')}}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/remixicon.css')}}" />
+        
+        {{-- Js Link --}}
         <script src="{{ asset('assets/js/perfect-scrollbar.min.js')}}"></script>
         <script defer src="{{ asset('assets/js/popper.min.js')}}"></script>
         <script defer src="{{ asset('assets/js/tippy-bundle.umd.min.js')}}"></script>

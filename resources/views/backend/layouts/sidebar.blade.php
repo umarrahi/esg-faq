@@ -27,22 +27,11 @@
                 <!-- General -->
                 <li class="menu nav-item">
                     <a href="{{ url('/') }}" class="nav-link group">
-                        {{-- <span class="menu-icon"><i class="uil uil-estate"></i></span> --}}
                         <div class="flex items-center">
-                            <svg class="shrink-0 group-hover:!text-primary" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.5"
-                                    d="M12 22C7.28595 22 4.92893 22 3.46447 20.5355C2 19.0711 2 16.714 2 12C2 7.28595 2 4.92893 3.46447 3.46447C4.92893 2 7.28595 2 12 2C16.714 2 19.0711 2 20.5355 3.46447C22 4.92893 22 7.28595 22 12C22 16.714 22 19.0711 20.5355 20.5355C19.0711 22 16.714 22 12 22Z"
-                                    fill="currentColor" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path
-                                    d="M18.75 8C18.75 8.41421 18.4142 8.75 18 8.75H6C5.58579 8.75 5.25 8.41421 5.25 8C5.25 7.58579 5.58579 7.25 6 7.25H18C18.4142 7.25 18.75 7.58579 18.75 8Z"
-                                    fill="currentColor" />
-                                <path
-                                    d="M18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H6C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25H18C18.4142 11.25 18.75 11.5858 18.75 12Z"
-                                    fill="currentColor" />
-                                <path
-                                    d="M18.75 16C18.75 16.4142 18.4142 16.75 18 16.75H6C5.58579 16.75 5.25 16.4142 5.25 16C5.25 15.5858 5.58579 15.25 6 15.25H18C18.4142 15.25 18.75 15.5858 18.75 16Z"
-                                    fill="currentColor" />
+                                    d="M17 2V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H7V2H17ZM7 6H5V20H19V6H17V8H7V6ZM9 16V18H7V16H9ZM9 13V15H7V13H9ZM9 10V12H7V10H9ZM15 4H9V6H15V4Z">
+                                </path>
                             </svg>
                             <span
                                 class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">General</span>
@@ -53,19 +42,11 @@
                 <!-- Environmental -->
                 <li class="menu nav-item">
                     <a href="{{ url('/environmental') }}" class="nav-link group">
-                        {{-- <span class="menu-icon"><i class="uil uil-estate"></i></span> --}}
                         <div class="flex items-center">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="group-hover:!text-primary shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                 <path
-                                    d="M8.42229 20.6181C10.1779 21.5395 11.0557 22.0001 12 22.0001V12.0001L2.63802 7.07275C2.62423 7.09491 2.6107 7.11727 2.5974 7.13986C2 8.15436 2 9.41678 2 11.9416V12.0586C2 14.5834 2 15.8459 2.5974 16.8604C3.19479 17.8749 4.27063 18.4395 6.42229 19.5686L8.42229 20.6181Z"
-                                    fill="currentColor"></path>
-                                <path opacity="0.7"
-                                    d="M17.5774 4.43152L15.5774 3.38197C13.8218 2.46066 12.944 2 11.9997 2C11.0554 2 10.1776 2.46066 8.42197 3.38197L6.42197 4.43152C4.31821 5.53552 3.24291 6.09982 2.6377 7.07264L11.9997 12L21.3617 7.07264C20.7564 6.09982 19.6811 5.53552 17.5774 4.43152Z"
-                                    fill="currentColor"></path>
-                                <path opacity="0.5"
-                                    d="M21.4026 7.13986C21.3893 7.11727 21.3758 7.09491 21.362 7.07275L12 12.0001V22.0001C12.9443 22.0001 13.8221 21.5395 15.5777 20.6181L17.5777 19.5686C19.7294 18.4395 20.8052 17.8749 21.4026 16.8604C22 15.8459 22 14.5834 22 12.0586V11.9416C22 9.41678 22 8.15436 21.4026 7.13986Z"
-                                    fill="currentColor"></path>
+                                    d="M16 16C17.6569 16 19 17.3431 19 19C19 20.6569 17.6569 22 16 22C14.3431 22 13 20.6569 13 19C13 17.3431 14.3431 16 16 16ZM6 12C8.20914 12 10 13.7909 10 16C10 18.2091 8.20914 20 6 20C3.79086 20 2 18.2091 2 16C2 13.7909 3.79086 12 6 12ZM16 18C15.4477 18 15 18.4477 15 19C15 19.5523 15.4477 20 16 20C16.5523 20 17 19.5523 17 19C17 18.4477 16.5523 18 16 18ZM6 14C4.89543 14 4 14.8954 4 16C4 17.1046 4.89543 18 6 18C7.10457 18 8 17.1046 8 16C8 14.8954 7.10457 14 6 14ZM14.5 2C17.5376 2 20 4.46243 20 7.5C20 10.5376 17.5376 13 14.5 13C11.4624 13 9 10.5376 9 7.5C9 4.46243 11.4624 2 14.5 2ZM14.5 4C12.567 4 11 5.567 11 7.5C11 9.433 12.567 11 14.5 11C16.433 11 18 9.433 18 7.5C18 5.567 16.433 4 14.5 4Z">
+                                </path>
                             </svg>
                             <span
                                 class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Environmental</span>
@@ -76,19 +57,29 @@
                 <!-- Social -->
                 <li class="menu nav-item">
                     <a href="{{ url('/social') }}" class="nav-link group">
-                        {{-- <span class="menu-icon"><i class="uil uil-estate"></i></span> --}}
                         <div class="flex items-center">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="group-hover:!text-primary shrink-0">
-                                <circle opacity="0.5" cx="15" cy="6" r="3" fill="currentColor"></circle>
-                                <ellipse opacity="0.5" cx="16" cy="17" rx="5" ry="3"
-                                    fill="currentColor"></ellipse>
-                                <circle cx="9.00098" cy="6" r="4" fill="currentColor"></circle>
-                                <ellipse cx="9.00098" cy="17.001" rx="7" ry="4"
-                                    fill="currentColor"></ellipse>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11ZM18.2837 14.7028C21.0644 15.9561 23 18.752 23 22H21C21 19.564 19.5483 17.4671 17.4628 16.5271L18.2837 14.7028ZM17.5962 3.41321C19.5944 4.23703 21 6.20361 21 8.5C21 11.3702 18.8042 13.7252 16 13.9776V11.9646C17.6967 11.7222 19 10.264 19 8.5C19 7.11935 18.2016 5.92603 17.041 5.35635L17.5962 3.41321Z">
+                                </path>
                             </svg>
                             <span
                                 class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Social</span>
+                        </div>
+                    </a>
+                </li>
+
+                <!-- Governance -->
+                <li class="menu nav-item">
+                    <a href="{{ url('/social') }}" class="nav-link group">
+                        <div class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M20 6H23V8H22V19H23V21H1V19H2V8H1V6H4V4C4 3.44772 4.44772 3 5 3H19C19.5523 3 20 3.44772 20 4V6ZM20 8H4V19H7V12H9V19H11V12H13V19H15V12H17V19H20V8ZM6 5V6H18V5H6Z">
+                                </path>
+                            </svg>
+                            <span
+                                class="text-black ltr:pl-3 rtl:pr-3 dark:text-[#506690] dark:group-hover:text-white-dark">Governance</span>
                         </div>
                     </a>
                 </li>

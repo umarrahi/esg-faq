@@ -17,3 +17,7 @@ Route::get('/environmental', function () {
 Route::get('/social', function () {
     return view('backend.social');
 });
+
+Route::get('/governance', function () {
+    return view('backend.governance');
+});

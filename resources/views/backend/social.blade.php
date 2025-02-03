@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <  <form class="space-y-8 pt-5" x-data="form">
+    <form class="space-y-8 pt-5" x-data="form">
         <div class="panel">
             <div class="mb-5">
                 <h5 class="text-xl font-bold dark:text-white-light">Social</h5>
@@ -35,7 +35,7 @@
                                 class="flex items-center border-t-2 border-transparent bg-[#f6f7f8] p-7 py-3 hover:border-secondary hover:text-secondary dark:bg-transparent dark:hover:bg-[#191e3a]"
                                 :class="{ '!border-secondary text-secondary dark:bg-[#191e3a]': tab === '3' }"
                                 @click="tab = '3'">
-                                Affordable Products and Services
+                                Affected Communities
                             </a>
                         </li>
                     </ul>
